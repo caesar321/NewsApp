@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/cardview"
+    android:elevation="5dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:layout_margin="6dp"
+      android:orientation="horizontal">
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:orientation="vertical"
+          android:layout_margin="7dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:id="@+id/txt_Title"
+              android:textStyle="bold"
+              android:textSize="22sp"
+              android:textColor="@color/black"
+              android:maxLines="3"
+              android:ellipsize="end"
+              android:text="New Headlines"
+              android:layout_height="wrap_content"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:id="@+id/txt_description"
+              android:textStyle="italic"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+              android:maxLines="5"
+              android:layout_marginTop="7dp"
+              android:ellipsize="end"
+              android:text="New Headlines"
+              android:layout_height="wrap_content"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/txt_Author"
+              android:textStyle="italic"
+              android:textSize="12sp"
+              android:textColor="@color/black"
+              android:maxLines="1"
+              android:layout_marginTop="8dp"
+              android:ellipsize="end"
+              android:text="New Headlines"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:id="@+id/img_image"
+          android:layout_weight="1"/>
+  </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
